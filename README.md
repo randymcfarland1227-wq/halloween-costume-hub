@@ -1,33 +1,18 @@
 # Halloween Costume Hub
 
-Personal costume planner for **Randy Mcfarland** — track multiple Halloween looks with ideas, inspiration, and buy/make checklists. Data stays in the browser (`localStorage` key `halloween-costume-hub-v1`).
+Randy's visual costume studio: moodboards + project management for multiple Halloween costumes.
 
-## Live
+**Live:** https://halloween-costume-hub.vercel.app
 
-https://halloween-costume-hub.vercel.app
+## Features
+- **Dashboard**: live countdown to Oct 31, collage costume cards with progress rings, what's due this week, next actions, total spent vs budget
+- **Moodboard canvas** per costume: drag/drop, paste or link images (compressed into IndexedDB), sticky notes, color swatches; move, resize, multi-select, group, set cover
+- **Brainstorm**: 10 guided prompts, each answer becomes a board note or tasks in one click; Spark deck of curated twists (no AI); palette picker with presets
+- **Tasks & budget**: Kanban (To do / In progress / Done) for buy + make items with due date, est/actual cost, shop link, priority; budget tracker
+- **Timeline**: backwards plan from each costume's event date (order by, build by, test fit…), overdue highlighting, auto-schedule
+- Export/Import JSON (includes images). Data: localStorage `halloween-costume-hub-v2` (auto-migrates v1) + IndexedDB `halloween-costume-hub-images`
 
 ## Local
-
 ```bash
-cd /workspace/halloween-costume-hub
-npm install
-npm run dev
+npm install && npm run dev
 ```
-
-Then open the URL Vite prints (usually `http://localhost:5173`).
-
-```bash
-npm run build    # production build
-npm run preview  # serve dist locally
-```
-
-## Stack
-
-- Vite + React + TypeScript
-- React Router
-- localStorage persistence (no backend / no auth)
-- Dark spooky editorial UI (Fraunces + DM Sans)
-
-## Backup
-
-Use **Export** / **Import** on the home screen for JSON backups.
