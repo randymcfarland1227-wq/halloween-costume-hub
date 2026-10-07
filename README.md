@@ -1,32 +1,33 @@
-# React + TypeScript + Vite
+# Halloween Costume Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal costume planner for **Randy Mcfarland** — track multiple Halloween looks with ideas, inspiration, and buy/make checklists. Data stays in the browser (`localStorage` key `halloween-costume-hub-v1`).
 
-Currently, two official plugins are available:
+## Live
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://halloween-costume-hub.vercel.app
 
-## React Compiler
+## Local
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+cd /workspace/halloween-costume-hub
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Then open the URL Vite prints (usually `http://localhost:5173`).
+
+```bash
+npm run build    # production build
+npm run preview  # serve dist locally
+```
+
+## Stack
+
+- Vite + React + TypeScript
+- React Router
+- localStorage persistence (no backend / no auth)
+- Dark spooky editorial UI (Fraunces + DM Sans)
+
+## Backup
+
+Use **Export** / **Import** on the home screen for JSON backups.
